@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pear & Orange Product</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .product-section {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            gap: 20px;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: 30px;
+            object-fit: cover;
+        }
+        .product-details {
+            background-color: #fff;
+            border-radius: 30px;
+            border: 4px solid #000;
+            overflow: hidden;
+        }
+        .product-hero-image {
+            width: 100%;
+            border-radius: 30px 30px 0 0;
+        }
+        .product-info {
+            padding: 30px;
+        }
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .product-price {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .product-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .product-description {
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .recently-viewed {
+            margin-top: 30px;
+        }
+        .recently-viewed-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .recently-viewed-images {
+            display: flex;
+            gap: 15px;
+        }
+        .recently-viewed-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        .cart-actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .favorite-button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .add-to-cart-button {
+            background-color: #318981;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            flex-grow: 1;
+        }
+        .menu-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #318981;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+            .product-image, .product-details {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="product-section">
+        <div class="product-container">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6b5855061fd5758c3261b764cf6a56aaa04cd6100138faaab8d93cef60d10e18?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Pear and Orange product" class="product-image">
+            <div class="product-details">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f00a217934f96cea2e7b34e422b26c8c45b832becee09395f44bc701e62bbb0?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Pear and Orange dish" class="product-hero-image">
+                <div class="product-info">
+                    <div class="product-header">
+                        <div>
+                            <h1 class="product-title">Pear & Orange</h1>
+                            <p class="product-price">$25.00</p>
+                        </div>
+                        <div class="product-meta">
+                            <span class="meta-item">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/aec1c606d723552a8b785ab9f2e1a4daa0511b281c45abc119fbd3acfd6c9f88?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Time icon" width="20" height="20">
+                                20 min
+                            </span>
+                            <span class="meta-item">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c282a18bf8565bef7ba6339ff7013942f5b03910bc1f441d42efc16ed8152a11?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Star rating icon" width="20" height="20">
+                                4.8
+                            </span>
+                        </div>
+                    </div>
+                    <p class="product-description">
+                        As a rule, pancakes are served for breakfast with various sweet sauces, chocolate, berries, maple syrup. Pancakes were a very popular breakfast only in the USA and Canada, but now pancakes enjoy breakfast all over the world.
+                    </p>
+                    <div class="recently-viewed">
+                        <h2 class="recently-viewed-title">Recently Viewed</h2>
+                        <div class="recently-viewed-images">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ebfc16edd1c204420ac7c7146490514f2209a9a076933809776453848c898779?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Recently viewed item 1" class="recently-viewed-image">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6df5030e424ea87a2ed7676635650973a554e29d1ffcd07e4268f1c855b1965a?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Recently viewed item 2" class="recently-viewed-image">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/22c9bf56ae81570841cf2d7511929979ca0cdc999fe33714419fdde6210cc108?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Recently viewed item 3" class="recently-viewed-image">
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <button class="favorite-button" aria-label="Add to favorites">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/71c395f52430321830fd294755113d7003dcb13850332e0e342c36d12d420574?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Favorite icon" width="24" height="24">
+                        </button>
+                        <button class="add-to-cart-button">Add to cart</button>
+                    </div>
+                </div>
+                <nav class="menu-bar">
+                    <span class="menu-item">Menu</span>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9e8f8571fc329428c321155286c3cbb87fdad8e48c7322ac87571dd9d8dda4cd?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Menu icon" width="24" height="24">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b69498e7df621e9cebded5238a3ec2bd4c16bb4fc3e1651c03ff8bc0b9716d9c?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Search icon" width="20" height="20">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/93bae52b839391927d4ab385645039d1c6a1933b914eef514d0fbb533519db12?placeholderIfAbsent=true&apiKey=ec9b3c3dc95d4e7cbc4a3d853a23450a" alt="Profile icon" width="20" height="20">
+                </nav>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
